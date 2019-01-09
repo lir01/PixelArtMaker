@@ -11,9 +11,6 @@ function makeGrid() {
     
     //whenever the submit button is pressed, a new grid is created
     document.getElementById('pixelCanvas').innerHTML = "";
-    
-    // Select color input
-    let color = document.getElementById('colorPicker').value;
 
     // Select size input
     h = document.getElementById('inputHeight').value;
@@ -28,6 +25,8 @@ function makeGrid() {
             let c = document.createElement('td');
             row.appendChild(c);
             c.addEventListener("click", function(event){
+            	// Select color input
+    			let color = document.getElementById('colorPicker').value;
             	event.target.style.backgroundColor = color;
             });
         }
