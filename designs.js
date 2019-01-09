@@ -7,7 +7,7 @@ let w = 1;
 
 function makeGrid() { 
 
-	event.preventDefault();
+    event.preventDefault();
     
     //whenever the submit button is pressed, a new grid is created
     document.getElementById('pixelCanvas').innerHTML = "";
@@ -26,7 +26,7 @@ function makeGrid() {
             row.appendChild(c);
             c.addEventListener("click", function(event){
             	// Select color input
-    			let color = document.getElementById('colorPicker').value;
+    		let color = document.getElementById('colorPicker').value;
             	event.target.style.backgroundColor = color;
             });
         }
